@@ -6,6 +6,7 @@ import Input from "./Input";
 const Posts = () => {
   const [data, setData] = useState([]);
   const [update, setUpdate] = useState({});
+
   const getPostData = async () => {
     const response = await getData();
     setData(response.data);
